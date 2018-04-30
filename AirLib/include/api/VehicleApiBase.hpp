@@ -34,6 +34,8 @@ public:
 
     virtual CameraInfo getCameraInfo(int camera_id) const = 0;
     virtual void setCameraOrientation(int camera_id, const Quaternionr& orientation) = 0;
+
+	virtual void spawnVehicle() = 0;
     
     virtual ~VehicleApiBase() = default;
 };

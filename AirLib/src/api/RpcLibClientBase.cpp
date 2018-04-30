@@ -162,6 +162,11 @@ void RpcLibClientBase::setCameraOrientation(int camera_id, const Quaternionr& or
     pimpl_->client.call("setCameraOrientation", camera_id, RpcLibAdapatorsBase::Quaternionr(orientation));
 }
 
+void RpcLibClientBase::spawnVehicle()
+{
+	pimpl_->client.call("spawnVehicle");
+}
+
 CollisionInfo RpcLibClientBase::getCollisionInfo()
 {
     return pimpl_->client.call("getCollisionInfo").as<RpcLibAdapatorsBase::CollisionInfo>().to();

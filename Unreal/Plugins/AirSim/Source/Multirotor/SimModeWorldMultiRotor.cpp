@@ -7,6 +7,7 @@
 #include "Logging/MessageLog.h"
 #include "vehicles/multirotor/MultiRotorParamsFactory.hpp"
 #include "UnrealSensors/UnrealSensorFactory.h"
+#include "Engine/World.h"
 
 
 ASimModeWorldMultiRotor::ASimModeWorldMultiRotor()

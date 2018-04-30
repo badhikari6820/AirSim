@@ -279,6 +279,15 @@ void MultiRotorConnector::setPose(const Pose& pose, bool ignore_collision)
     pending_pose_status_ = PendingPoseStatus::RenderStatePending;
 }
 
+void MultiRotorConnector::spawnVehicle()
+{
+	VehiclePawnWrapper* vpw = this->vehicle_pawn_wrapper_;
+
+	UAirBlueprintLib::RunCommandOnGameThread([&vpw]() {
+		static_cast<AFlyingPawn*>(vpw->getPawn())->Spawn();
+	}, true);
+}
+
 Pose MultiRotorConnector::getPose()
 {
     return vehicle_.getPose();

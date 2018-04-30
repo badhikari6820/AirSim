@@ -124,6 +124,11 @@
     <ClInclude Include="unreal\plugins\airsim\source\VehicleCameraConnector.h" />
     <ClInclude Include="unreal\plugins\airsim\source\VehiclePawnWrapper.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="AirLib\AirLib.vcxproj">
+      <Project>{4bfb7231-077a-4671-bd21-d3ade3ea36e7}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

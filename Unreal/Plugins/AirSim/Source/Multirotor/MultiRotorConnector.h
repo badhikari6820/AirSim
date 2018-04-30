@@ -68,6 +68,7 @@ public:
     virtual Pose getActorPose(const std::string& actor_name) override;
     virtual CameraInfo getCameraInfo(int camera_id) const override;
     virtual void setCameraOrientation(int camera_id, const Quaternionr& orientation) override;
+	virtual void spawnVehicle() override;
 
 private:
     void detectUsbRc();

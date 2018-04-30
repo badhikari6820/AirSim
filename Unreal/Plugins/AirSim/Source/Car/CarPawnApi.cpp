@@ -142,6 +142,11 @@ void CarPawnApi::simSetPose(const msr::airlib::Pose& pose, bool ignore_collision
     }, true);
 }
 
+void CarPawnApi::spawnVehicle()
+{
+    
+}
+
 msr::airlib::Pose CarPawnApi::simGetPose()
 {
     return pawn_->getPose();

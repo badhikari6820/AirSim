@@ -36,6 +36,7 @@ public:
     virtual Kinematics::State getTrueKinematics() = 0;
     virtual CameraInfo getCameraInfo(int camera_id) const = 0;
     virtual void setCameraOrientation(int camera_id, const Quaternionr& orientation) = 0;
+	virtual void spawnVehicle() = 0;
 };
 
 

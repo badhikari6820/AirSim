@@ -42,6 +42,7 @@ public:
     Pose simGetObjectPose(const std::string& object_name);
     CameraInfo getCameraInfo(int camera_id);
     void setCameraOrientation(int camera_id, const Quaternionr& orientation);
+	void spawnVehicle();
 
     virtual ~RpcLibClientBase();    //required for pimpl
 

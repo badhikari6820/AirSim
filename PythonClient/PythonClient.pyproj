@@ -49,6 +49,9 @@
     <Compile Include="manual_mode_demo.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="swarmControl.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="objects.py">
       <SubType>Code</SubType>
     </Compile>

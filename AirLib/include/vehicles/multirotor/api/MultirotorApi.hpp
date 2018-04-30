@@ -297,6 +297,11 @@ public:
         vehicle_->setCameraOrientation(camera_id, orientation);
     }
 
+	virtual void spawnVehicle() override
+	{
+		vehicle_->spawnVehicle();
+	}
+
     virtual bool isApiControlEnabled() const override
     {
         return controller_->isApiControlEnabled();

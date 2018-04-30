@@ -108,6 +108,11 @@ public:
         throw std::logic_error("setCameraOrientation() call is not implemented for this vehicle");
     }
 
+	virtual void spawnVehicle() override
+	{
+
+	}
+
 private:
     VehicleControllerBase* controller_;
 };

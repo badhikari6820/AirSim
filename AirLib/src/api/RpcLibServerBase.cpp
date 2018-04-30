@@ -109,6 +109,10 @@ RpcLibServerBase::RpcLibServerBase(VehicleApiBase* vehicle, string server_addres
         vehicle_->setCameraOrientation(camera_id, orientation.to());
     });
 
+	pimpl_->server.bind("spawnVehicle", [&]() -> void {
+		vehicle_->spawnVehicle();
+	});
+
     pimpl_->server.bind("enableApiControl", [&](bool is_enabled) -> void { vehicle_->enableApiControl(is_enabled); });
     pimpl_->server.bind("isApiControlEnabled", [&]() -> bool { return vehicle_->isApiControlEnabled(); });
 
